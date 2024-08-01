@@ -3,8 +3,8 @@ public class Main {
         Class<Pessoa> pessoaClass = Pessoa.class;
 
         if (pessoaClass.isAnnotationPresent(Tabela.class)) {
-            Tabela tabelaAnootation = pessoaClass.getAnnotation(Tabela.class);
-            String tableName = tabelaAnootation.value();
+            Tabela tabelaAnnotation = pessoaClass.getAnnotation(Tabela.class);
+            String tableName = tabelaAnnotation.value();
             System.out.println("Nome da tabela: " + tableName);
         }
     }
